@@ -1,4 +1,4 @@
-> **Note:** Part of a Git submodule of the `is-sorted` project. (Source: .gitmodules)
+> **Note:** Part of a Git submodule of the `is-sorted` project, declared in the parent repository's `.gitmodules`.
 
 ## Globally Useful gitignores
 
