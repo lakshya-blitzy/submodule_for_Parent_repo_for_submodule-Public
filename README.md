@@ -1,3 +1,9 @@
+> **Note — Git submodule of `is-sorted`.** This directory is vendored as a Git
+> submodule of the [`is-sorted`](https://github.com/dcousens/is-sorted) project
+> and is included within that project's documentation scope. It is an unmodified
+> clone of the upstream GitHub `.gitignore` template collection; all upstream
+> content below is preserved. (Source: .gitmodules)
+
 # A collection of `.gitignore` templates
 
 This is GitHub’s collection of [`.gitignore`][man] file templates.

@@ -1,3 +1,5 @@
+> **Note:** Part of a Git submodule of the `is-sorted` project. (Source: .gitmodules)
+
 ## Globally Useful gitignores
 
 This directory contains globally useful gitignores,
