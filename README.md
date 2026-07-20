@@ -1,18 +1,17 @@
 > **is-sorted submodule context**
 >
-> This directory is the **first** of **two** Git submodule mount points declared
-> by the [`is-sorted`](../README.md) npm package — specifically,
-> `Parent_repo_for_submodule/`, declared in the first
-> `[submodule ...]` stanza of `.gitmodules` (Source: `.gitmodules:L1-L3`); the
-> second mount, `submodule_for_Parent_repo_for_submodule-Public/`, is declared at
-> `.gitmodules:L4-L6`.
+> This directory is one of **two** Git submodule mount points declared
+> by the [`is-sorted`](../README.md) npm package — the two mounts,
+> `Parent_repo_for_submodule/` and
+> `submodule_for_Parent_repo_for_submodule-Public/`, are declared in the two
+> `[submodule ...]` stanzas of `.gitmodules` (Source: `.gitmodules:L1-L6`).
 > The `is-sorted` package is published to npm from its upstream repository at
 > <https://github.com/dcousens/is-sorted>. This directory hosts a fork of
 > GitHub's collection of `.gitignore` templates; the upstream README is preserved
 > verbatim below.
 >
-> Both `is-sorted` submodule mount points — `Parent_repo_for_submodule/` (this
-> directory) and `submodule_for_Parent_repo_for_submodule-Public/` — are
+> Both `is-sorted` submodule mount points — `Parent_repo_for_submodule/` and
+> `submodule_for_Parent_repo_for_submodule-Public/` — are
 > declared against the **same** upstream repository URL
 > (`https://github.com/lakshya-blitzy/submodule_for_Parent_repo_for_submodule-Public.git`),
 > as recorded in the two `[submodule ...]` stanzas of `.gitmodules`
