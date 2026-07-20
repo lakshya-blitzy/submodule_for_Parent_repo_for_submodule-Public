@@ -2,14 +2,16 @@
 >
 > This directory is one of **two** Git submodule mount points declared by the
 > [`is-sorted`](https://github.com/dcousens/is-sorted) npm package
-> (Source: `.gitmodules:L1-L3`). It hosts a fork of GitHub's collection of
+> (Source: `.gitmodules:L1-L6`). It hosts a fork of GitHub's collection of
 > `.gitignore` templates; the upstream README is preserved verbatim below.
 >
 > Both `is-sorted` submodule mount points — `Parent_repo_for_submodule/` and
-> `submodule_for_Parent_repo_for_submodule-Public/` — reference the **same**
-> upstream repository
-> (`https://github.com/lakshya-blitzy/submodule_for_Parent_repo_for_submodule-Public.git`)
-> at the same pinned commit (Source: `.gitmodules`).
+> `submodule_for_Parent_repo_for_submodule-Public/` — are declared against the
+> **same** upstream repository URL
+> (`https://github.com/lakshya-blitzy/submodule_for_Parent_repo_for_submodule-Public.git`),
+> as recorded in the two `[submodule ...]` stanzas of `.gitmodules`
+> (Source: `.gitmodules:L1-L6`). Each mount point is pinned independently by the
+> parent repository (see `git submodule status --recursive`).
 >
 > Initialize or update this submodule from the parent repository with:
 >
@@ -19,7 +21,11 @@
 >
 > This submodule is **supplemental** — a `.gitignore` templates collection — and
 > is **not** required to install or consume the `is-sorted` package
-> (`npm install is-sorted`).
+> (`npm install is-sorted`). The package publishes only its runtime entry point
+> and TypeScript declaration (`"main": "index.js"`, `"types": "index.d.ts"`;
+> Source: `package.json:L5-L6`) and declares only development dependencies, with
+> no runtime `dependencies` (Source: `package.json:L30-L33`); the runtime module
+> itself does not require or reference this submodule (Source: `index.js`).
 
 ---
 
