@@ -1,3 +1,28 @@
+> **is-sorted submodule context**
+>
+> This directory is one of **two** Git submodule mount points declared by the
+> [`is-sorted`](https://github.com/dcousens/is-sorted) npm package
+> (Source: `.gitmodules:L1-L3`). It hosts a fork of GitHub's collection of
+> `.gitignore` templates; the upstream README is preserved verbatim below.
+>
+> Both `is-sorted` submodule mount points — `Parent_repo_for_submodule/` and
+> `submodule_for_Parent_repo_for_submodule-Public/` — reference the **same**
+> upstream repository
+> (`https://github.com/lakshya-blitzy/submodule_for_Parent_repo_for_submodule-Public.git`)
+> at the same pinned commit (Source: `.gitmodules`).
+>
+> Initialize or update this submodule from the parent repository with:
+>
+> ```bash
+> git submodule update --init --recursive
+> ```
+>
+> This submodule is **supplemental** — a `.gitignore` templates collection — and
+> is **not** required to install or consume the `is-sorted` package
+> (`npm install is-sorted`).
+
+---
+
 # A collection of `.gitignore` templates
 
 This is GitHub’s collection of [`.gitignore`][man] file templates.
