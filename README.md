@@ -1,3 +1,11 @@
+> **Note — Git submodule of `is-sorted`.** This directory is vendored as a Git
+> submodule of the
+> [`is-sorted` project](https://github.com/lakshya-blitzy/Parent_repo_for_submodule)
+> and is included within that project's documentation scope. Aside from this
+> note, it is a clone of the upstream GitHub `.gitignore` template collection;
+> all upstream content below is preserved unchanged. (Source: the parent
+> `is-sorted` repository's `.gitmodules`, which declares this submodule.)
+
 # A collection of `.gitignore` templates
 
 This is GitHub’s collection of [`.gitignore`][man] file templates.
