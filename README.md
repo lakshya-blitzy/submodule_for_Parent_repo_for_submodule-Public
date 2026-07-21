@@ -1,3 +1,42 @@
+> **is-sorted submodule context**
+>
+> This directory is one of **two** Git submodule mount points declared
+> by the [`is-sorted`](../README.md) npm package — the two mounts,
+> `Parent_repo_for_submodule/` and
+> `submodule_for_Parent_repo_for_submodule-Public/`, are declared in the two
+> `[submodule ...]` stanzas of `.gitmodules` (Source: `.gitmodules:L1-L6`).
+> The `is-sorted` package is published to npm from its upstream repository at
+> <https://github.com/dcousens/is-sorted> (Source: `package.json:L11-L14,L18`).
+> This directory hosts a fork of GitHub's collection of `.gitignore` templates;
+> the upstream README is preserved verbatim below.
+>
+> Both `is-sorted` submodule mount points — `Parent_repo_for_submodule/` and
+> `submodule_for_Parent_repo_for_submodule-Public/` — are
+> declared against the **same** upstream repository URL
+> (`https://github.com/lakshya-blitzy/submodule_for_Parent_repo_for_submodule-Public.git`),
+> as recorded in the two `[submodule ...]` stanzas of `.gitmodules`
+> (Source: `.gitmodules:L1-L6`), and are each pinned **independently** by the
+> parent repository (Source: `git submodule status --recursive`).
+>
+> Initialize or update this submodule from the parent repository with:
+>
+> ```bash
+> git submodule update --init --recursive
+> ```
+>
+> This submodule is **supplemental** — a `.gitignore` templates collection — and
+> is **not** required to install or consume the `is-sorted` package
+> (`npm install is-sorted`). The package's `main` and `types` fields designate its
+> entry point (`index.js`) and TypeScript declaration (`index.d.ts`)
+> (Source: `package.json:L5-L6`) — they identify what a consumer loads, **not** the
+> exclusive contents of the published tarball, which also bundles additional files
+> (run `npm pack --dry-run` to inspect). The package declares only development
+> dependencies, with no runtime `dependencies` (Source: `package.json:L30-L33`),
+> and the runtime module does not require or reference this submodule
+> (Source: `index.js:L1-L14`).
+
+---
+
 # A collection of `.gitignore` templates
 
 This is GitHub’s collection of [`.gitignore`][man] file templates.
