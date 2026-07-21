@@ -8,6 +8,6 @@ For more on global gitignores:
 
 And a good blog post about 'em:
 <http://augustl.com/blog/2009/global_gitignores>
-> **is-sorted submodule context:** This `Global/` directory is part of the `.gitignore` templates collection mounted at both of the [`is-sorted`](../../README.md) npm package's Git submodule mount points — `Parent_repo_for_submodule/` and `submodule_for_Parent_repo_for_submodule-Public/`, declared in the two `[submodule ...]` stanzas of `.gitmodules` (Source: `.gitmodules:L1-L6`). It is supplemental and not required to use `is-sorted`; initialize it from the parent repo with `git submodule update --init --recursive`.
+//test
 
 > **is-sorted submodule context:** This `Global/` directory is part of the `.gitignore` templates collection mounted at both of the [`is-sorted`](../../README.md) npm package's Git submodule mount points — `Parent_repo_for_submodule/` and `submodule_for_Parent_repo_for_submodule-Public/`, declared in the two `[submodule ...]` stanzas of `.gitmodules` (Source: `.gitmodules:L1-L6`). It is supplemental and not required to use `is-sorted`; initialize it from the parent repo with `git submodule update --init --recursive`.
